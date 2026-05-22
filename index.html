@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KupalChat</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LOGIN -->
+  <div id="loginBox" class="card">
+
+    <h1>KupalChat</h1>
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="email" id="email" placeholder="Email">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button id="signupBtn">Sign Up</button>
+
+    <button id="loginBtn">Login</button>
+
+  </div>
+
+  <!-- CHAT -->
+  <div id="chatBox" class="hidden">
+
+    <div class="topbar">
+      <h2>QpalsChat</h2>
+
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="main">
+
+      <div class="sidebar">
+
+        <button id="groupBtn">🌍 Group Chat</button>
+
+        <div id="usersList"></div>
+
+      </div>
+
+      <!-- CHAT AREA -->
+      <div class="chatArea">
+
+        <div id="chatTitle">Group Chat</div>
+
+        <div id="messages"></div>
+
+        <emoji-picker id="picker"></emoji-picker>
+
+        <div class="sendBox">
+
+          <input type="text" id="messageInput" placeholder="Type message...">
+
+          <button id="emojiBtn">😀</button>
+
+          <button id="sendBtn">Send</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#bff7ef;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+}
+
+.card{
+    width:350px;
+    margin:auto;
+    margin-top:80px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#00a896;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-top:12px;
+    border:none;
+    border-radius:15px;
+    background:#eefefe;
+    outline:none;
+    box-sizing:border-box;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    border-radius:15px;
+}
+
+#signupBtn,#loginBtn{
+    width:100%;
+    padding:14px;
+    margin-top:12px;
+    background:#00bfa6;
+    color:white;
+    font-size:16px;
+}
+
+.hidden{
+    display:none;
+}
+
+.topbar{
+    background:#00bfa6;
+    color:white;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.main{
+    display:flex;
+    height:calc(100vh - 70px);
+}
+
+.sidebar{
+    width:150px;
+    background:white;
+    padding:10px;
+    overflow-y:auto;
+}
+
+.sidebar button{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    background:#00bfa6;
+    color:white;
+}
+
+.userItem{
+    padding:12px;
+    background:#eefefe;
+    margin-top:10px;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.chatArea{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+#chatTitle{
+    padding:15px;
+    background:#d9fffa;
+    font-weight:bold;
+}
+
+#messages{
+    flex:1;
+    overflow-y:auto;
+    padding:20px;
+    background:#f6fffd;
+}
+
+.message{
+    max-width:70%;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 0 5px rgba(0,0,0,0.05);
+}
+
+.me{
+    margin-left:auto;
+    background:#b9fff4;
+}
+
+.sendBox{
+    display:flex;
+    padding:15px;
+    background:white;
+    gap:10px;
+}
+
+.sendBox input{
+    flex:1;
+}
+
+.sendBox button{
+    padding:12px 18px;
+    background:#00bfa6;
+    color:white;
+}
+
+emoji-picker{
+    display:none;
+    width:100%;
+    height:300px;
+}
